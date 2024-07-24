@@ -1,0 +1,88 @@
+/* ContactUs.module.css */
+.contactUs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .contactInfo {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contactForm {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .textarea {
+    height: 150px;
+  }
+  
+  .submitButton {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .leaderInfo {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .leader {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .leaderImage {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit:fill;
+    background-color: #9f9b9b;
+    
+  }
+  
+  .leaderName {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .leaderContact {
+    font-style: italic;
+  }
