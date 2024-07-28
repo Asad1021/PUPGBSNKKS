@@ -10,7 +10,7 @@ const galleryImages = importAll(require.context('../gallery', false, /\.(jpg|jpe
 }));
 
 const importAllFeat = (r) => r.keys().map(r);
-const featuredImages = importAll(require.context('../featured', false, /\.(jpg|jpeg|png|gif)$/)).map((src, index) => ({
+const featuredImages = importAllFeat(require.context('../featured', false, /\.(jpg|jpeg|png|gif)$/)).map((src, index) => ({
   id: index + 1,
   src,
   alt: `Featured Image ${index + 1}`

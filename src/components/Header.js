@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../images/logo.png'; 
 import hegde from '../images/Ganpati Hegde.png';
 import mukherji from '../images/Mukherji ji.png';
 

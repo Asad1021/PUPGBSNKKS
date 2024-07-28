@@ -6,7 +6,6 @@ import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Team from './components/Team';
 import Gallery from './components/Gallery';
-import Announcements from './components/Announcements';
 import './App.css';
 
 function App() {
