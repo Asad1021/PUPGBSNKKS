@@ -1,0 +1,49 @@
+.announcementsContainer {
+    background-color: #f8f8f8;
+    border: 2px solid #771631;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .announcementsTitle {
+    color: #771631;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .announcementsList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .announcementItem {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .newLabel {
+    background-color: #771631;
+    color: white;
+    font-size: 0.8em;
+    padding: 3px 6px;
+    border-radius: 3px;
+    animation: flash 1s infinite alternate;
+  }
+  
+  @keyframes flash {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }

@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './Home.module.css';
+import Announcements from './Announcements';
 
 function Home() {
   return (
+    
     <div className={styles.home}>
+      <Announcements />
       <section className={styles.hero}>
         <h1 className={styles.heroTitle}>Welcome to Prathama UP Gramin Bank Seva Nivratt Karamchari Kalyan Samiti</h1>
         <p className={styles.heroSubtitle}>Supporting retired staff of Prathama UP Gramin Bank</p>
