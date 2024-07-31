@@ -9,12 +9,9 @@
   .contactInfo {
     flex: 1;
     min-width: 300px;
+    padding: 1rem;
   }
   
-  .contactForm {
-    flex: 1;
-    min-width: 300px;
-  }
   
   .form {
     display: flex;
@@ -31,37 +28,11 @@
     font-weight: bold;
   }
   
-  .input,
-  .textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .textarea {
-    height: 150px;
-  }
-  
-  .submitButton {
-    background-color: #3498db;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submitButton:hover {
-    background-color: #2980b9;
-  }
-  
+
   .leaderInfo {
     display: flex;
-    gap: 2rem;
     margin-top: 2rem;
+    justify-content: space-between;
   }
   
   .leader {
@@ -70,8 +41,7 @@
   }
   
   .leaderImage {
-    width: 170px;
-    height: 170px;
+    width: 30vw;
     border-radius: 50%;
     object-fit:fill;
     background-color: #9f9b9b;
@@ -85,4 +55,18 @@
   
   .leaderContact {
     font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+  
+    .leaderImage {
+      width: 25vw;
+    }
+     
+  .leaderContact {
+    font-style: italic;
+    font-size: 0.7rem;
+  }
+  
+  
   }

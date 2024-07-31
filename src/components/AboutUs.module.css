@@ -100,4 +100,7 @@
     .structureItem {
       flex-basis: 100%;
     }
+    .section {
+      padding: 0 1rem;
+    }
   }

@@ -23,16 +23,19 @@ function Gallery() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         (prevIndex + 1) % featuredImages.length
       );
-    }, 3000); // Change image every 5 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
 
   return (
+
     <div className={styles.galleryContainer}>
+      <div className= {styles.galleryTitle}>Gallery</div>
+    
       <div className={styles.featuredSection}>
         {featuredImages.map((image, index) => (
           <img

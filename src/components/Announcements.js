@@ -4,9 +4,8 @@ import styles from './Announcements.module.css';
 function Announcements() {
   const announcements = [
     { id: 1, text: "Welcome to our new website!", isNew: false },
-    { id: 2, text: "Check out our upcoming events in the Gallery section.", isNew: false },
+    { id: 2, text: "Check out our latest pics in the Gallery section.", isNew: false },
     { id: 3, text: "New team members have joined. Visit the Team page to learn more.", isNew: true },
-    { id: 4, text: "Hello Baa, please check this website", isNew: true },
 
   ];
     // Reverse the order of announcements

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import Announcements from './Announcements';
+import logo from '../images/logo.png';
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
       <section className={styles.hero}>
         <h1 className={styles.heroTitle}>Welcome to Prathama UP Gramin Bank Seva Nivratt Karamchari Kalyan Samiti</h1>
         <p className={styles.heroSubtitle}>Supporting retired staff of Prathama UP Gramin Bank</p>
-        {/* <a href="#contact" className={styles.cta}>Join Us Today</a> */}
+        <img src={logo} className={styles.logo} alt="logo" />
       </section>
 
       <section className={styles.features}>

@@ -15,16 +15,12 @@ function Navbar({ setCurrentPage, currentPage }) {
       <ul className={styles.navList}>
         {navItems.map((item) => (
           <li key={item.id} className={styles.navItem}>
-            <a
-              href={`#${item.id}`}
-              onClick={(e) => {
-                e.preventDefault();
-                setCurrentPage(item.id);
-              }}
+            <button
+              onClick={() => setCurrentPage(item.id)}
               className={`${styles.navLink} ${currentPage === item.id ? styles.active : ''}`}
             >
               {item.label}
-            </a>
+            </button>
           </li>
         ))}
       </ul>

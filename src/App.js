@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" style={{overflow:"hidden"}}>
       <Header />
       <Navbar setCurrentPage={setCurrentPage} currentPage={currentPage} />
       <main className="container">

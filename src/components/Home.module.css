@@ -19,6 +19,10 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
+  .logo{
+    width: 10%;
+    height:auto;
+  }
   
   .cta {
     display: inline-block;
@@ -75,5 +79,25 @@
   @media (max-width: 768px) {
     .feature {
       flex-basis: 100%;
+    }
+    .hero {
+      background-color: #771631;
+      color: white;
+      padding: 2rem 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .heroTitle {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .heroSubtitle {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .logo{
+      width: 30%;
+      height:auto;
     }
   }

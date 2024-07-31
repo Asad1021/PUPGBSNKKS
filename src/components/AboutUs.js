@@ -30,7 +30,7 @@ function AboutUs() {
             <p>After the amalgamation of Sarva UP Gramin Bank and Prathama Bank into Prathama UP Gramin Bank on April 1, 2019, the bank withheld pension payments despite the Supreme Court's verdict. To address this, our organization, led by a national-level leader, organized a large-scale dharna at the bank's Head Office in Moradabad. About 400 retirees participated. From the next day, the chairman began implementation, making our bank the first rural bank in the country to grant pensions to its retirees</p>
           </div>
           <div className={styles.timelineItem}>
-            <span className={styles.year}>2020-2023</span>
+            <span className={styles.year}>2020-2024</span>
             <p>Since the amalgamation on April 1, 2019, Prathama UP Gramin Bank expanded its reach from 4 districts—Moradabad, Amroha, Rampur, and Sambhal—to 21 districts, including Bulandshahar, Ghaziabad, Meerut, Gautam Budh Nagar, Hapur, Baghpat, Shamli, Saharanpur, Muzaffaranagar, Bijnor, Haridwar, Gonda, Balrampur, Budaun, Jhansi, Lalitpur, and more. We have since focused on increasing the membership of our organization in these new districts. Also we reregistered our organization as <strong>Prathama UP Gramin Bank Seva Nivratt Karamchari Kalyan Samiti</strong></p>
           </div>
 

@@ -6,6 +6,7 @@ import akTomarImage from '../images/AK.png';
 function ContactUs() {
   return (
     <div className={styles.contactUs}>
+      
       <div className={styles.contactInfo}>
         <h2>Contact Us</h2>
         <p>Get in touch with Prathama UP Gramin Bank Seva Nivratt Karamchari Kalyan Samiti:</p>
@@ -29,24 +30,6 @@ function ContactUs() {
         </div>
       </div>
 
-      {/* <div className={styles.contactForm}>
-        <h2>Send us a message</h2>
-        <form className={styles.form}>
-          <div className={styles.formGroup}>
-            <label htmlFor="name" className={styles.label}>Name:</label>
-            <input type="text" id="name" name="name" required className={styles.input} />
-          </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="email" className={styles.label}>Email:</label>
-            <input type="email" id="email" name="email" required className={styles.input} />
-          </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="message" className={styles.label}>Message:</label>
-            <textarea id="message" name="message" required className={styles.textarea}></textarea>
-          </div>
-          <button type="submit" className={styles.submitButton}>Send Message</button>
-        </form>
-      </div> */}
     </div>
   );
 }
