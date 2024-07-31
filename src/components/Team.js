@@ -104,6 +104,10 @@ function Team() {
             </div>
           </div>
         ))}
+        <div className={styles.structureItem}>
+         <h4>Regional Office Bearers</h4>
+         <p>20+</p>
+        </div>
       </div>
     </div>
   );
