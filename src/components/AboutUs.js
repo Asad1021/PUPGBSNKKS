@@ -113,8 +113,8 @@ function AboutUs() {
             <p>Dhan Singh</p>
           </div>
           <div className={styles.structureItem}>
-            <h4>Regional Secretary</h4>
-            <p>15+</p>
+            <h4>Regional Office Bearers</h4>
+            <p>20+</p>
           </div>
         </div>
       </section>
