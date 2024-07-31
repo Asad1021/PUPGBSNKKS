@@ -40,10 +40,10 @@ const teamMembers = [
     name: "Mr. Vinay Kumar Tyagi",
     position: "Vice President",
     photo: vinay,
-    mobileNumber: "+91 8630485758"
+    mobileNumber: "+91 8477809889"
   },
   {
-    name: "Mr. Agab Singh Tewatiya",
+    name: "Mr. Ajab Singh Tewatiya",
     position: "Vice President",
     photo: agab,
     mobileNumber: "+91 7505332712"
