@@ -5,9 +5,15 @@ import styles from './Team.module.css';
 import irfanAlamImage from '../images/Irfan Alam.png';
 import akTomarImage from '../images/AK.png';
 import asGuptaImage from '../images/AS Gupta.png';
-import vinayTyagiImage from '../images/Vinay Tyagi.png';
 import hpSharmaImage from '../images/HP Sharma.png';
 import dhanSinghImage from '../images/Dhan Singh.png';
+import sunil from '../images/Sunil.png';
+import mahendra from '../images/Mahendra.png';
+import vinay from '../images/Vinay Tyagi.png';
+import agab from '../images/Ajab.png';
+import shiv from '../images/Shiv.png';
+import hari from '../images/Hari.png';
+
 
 
 
@@ -19,10 +25,41 @@ const teamMembers = [
     mobileNumber: "+91 8630485758"
   },
   {
+    name: "Mr. Sunil Kumar Baliyan",
+    position: "Acting President",
+    photo: sunil,
+    mobileNumber: "+91 8630485758"
+  },
+  {
+    name: "Mr. Mahendra Singh",
+    position: "Vice President",
+    photo: mahendra,
+    mobileNumber: "+91 8630485758"
+  },
+  {
+    name: "Mr. Vinay Kumar Tyagi",
+    position: "Vice President",
+    photo: vinay,
+    mobileNumber: "+91 8630485758"
+  },
+  {
+    name: "Mr. Agab Singh Tewatiya",
+    position: "Vice President",
+    photo: agab,
+    mobileNumber: "+91 8630485758"
+  },
+
+  {
     name: "Mr. Irfan Alam",
     position: "General Secretary",
     photo: irfanAlamImage,
     mobileNumber: "+91 9084884907"
+  },
+  {
+    name: "Mr. Shiv Kumar Singh",
+    position: "Acting General Secretary",
+    photo: shiv,
+    mobileNumber: "+91 9410050844"
   },
 {
     name: "Mr. A.S. Gupta",
@@ -31,16 +68,17 @@ const teamMembers = [
     mobileNumber: "+91 9410050844"
   },
  
-  {
-    name: "Mr. Vinay Tyagi",
-    position: "Vice President",
-    photo: vinayTyagiImage,
-    mobileNumber: "+91 8477809889"
-  },
+
   {
     name: "Mr. H.P. Sharma",
     position: "Treasurer",
     photo: hpSharmaImage,
+    mobileNumber: "+91 9927700950"
+  },
+  {
+    name: "Mr. Hari Prakash Sharma",
+    position: "Publicity Secretary",
+    photo: hari,
     mobileNumber: "+91 9927700950"
   },
   {
