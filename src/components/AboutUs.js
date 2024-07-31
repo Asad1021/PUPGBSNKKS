@@ -63,7 +63,7 @@ function AboutUs() {
         <div className={styles.achievements}>
           <div className={styles.achievement}>
             <h4>Member Support</h4>
-            <p>Assisted over 1100 retired employees and family pensioners in navigating post-retirement challenges</p>
+            <p>Assisted over 1200 retired employees and family pensioners in navigating post-retirement challenges</p>
           </div>
           <div className={styles.achievement}>
             <h4>Health Initiatives</h4>
@@ -89,12 +89,20 @@ function AboutUs() {
             <p>A.K. Tomar</p>
           </div>
           <div className={styles.structureItem}>
+            <h4>Acting President</h4>
+            <p>Sunil Kumar Baliyan</p>
+          </div>
+          <div className={styles.structureItem}>
+            <h4>Vice President</h4>
+            <p>Mahendra Singh, Vinay Kumar Tyagi, Ajab Singh Tewatiya</p>
+          </div>
+          <div className={styles.structureItem}>
             <h4>General Secretary</h4>
             <p>Irfan Alam</p>
           </div>
           <div className={styles.structureItem}>
-            <h4>Vice President</h4>
-            <p>Mahendra Singh, Vinay Tyagi, Ajab Singh Tewatiya</p>
+            <h4>Acting General Secretary</h4>
+            <p>Shiv Kumar Singh</p>
           </div>
           <div className={styles.structureItem}>
             <h4>Secretary</h4>

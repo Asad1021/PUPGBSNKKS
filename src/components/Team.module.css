@@ -60,7 +60,7 @@
     color: #34495e;
     line-height: 1.6;
   }
-  structureItem{
+  .structureItem{
     display: flex;
     flex-direction: column;
     justify-content: center;
