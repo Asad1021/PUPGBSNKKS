@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './AboutUs.module.css';
+import doc from '../documents/registration.pdf';
 
 function AboutUs() {
   return (
@@ -10,7 +11,7 @@ function AboutUs() {
           "Supporting retirees of Prathama UP Gramin Bank leading fulfilling lives post-retirement."
         </p>
         <p>
-          Prathama UP Gramin Bank Seva Nivratt Karamchari Kalyan Samiti, established in 2015, is a dedicated organization committed to the welfare and support of retired employees of Prathama UP Gramin Bank. We strive to create a strong community, provide valuable resources, and advocate for the interests of our members.
+          Prathama UP Gramin Bank Seva Nivratt Karamchari Kalyan Samiti, established in 2015, registered under the <a href={doc} target="_blank" rel="noopener noreferrer"> license</a>, is a dedicated organization committed to the welfare and support of retired employees of Prathama UP Gramin Bank. We strive to create a strong community, provide valuable resources, and advocate for the interests of our members.
         </p>
       </section>
 
