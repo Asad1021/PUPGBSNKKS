@@ -28,13 +28,13 @@ const teamMembers = [
     name: "Mr. Sunil Kumar Baliyan",
     position: "Acting President",
     photo: sunil,
-    mobileNumber: "+91 8630485758"
+    mobileNumber: "+91 8630132424"
   },
   {
     name: "Mr. Mahendra Singh",
     position: "Vice President",
     photo: mahendra,
-    mobileNumber: "+91 8630485758"
+    mobileNumber: "+91 9690747000"
   },
   {
     name: "Mr. Vinay Kumar Tyagi",
@@ -46,7 +46,7 @@ const teamMembers = [
     name: "Mr. Agab Singh Tewatiya",
     position: "Vice President",
     photo: agab,
-    mobileNumber: "+91 8630485758"
+    mobileNumber: "+91 7505332712"
   },
 
   {
@@ -59,7 +59,7 @@ const teamMembers = [
     name: "Mr. Shiv Kumar Singh",
     position: "Acting General Secretary",
     photo: shiv,
-    mobileNumber: "+91 9410050844"
+    mobileNumber: "+91 9897037071"
   },
 {
     name: "Mr. A.S. Gupta",
@@ -68,25 +68,24 @@ const teamMembers = [
     mobileNumber: "+91 9410050844"
   },
  
-
-  {
-    name: "Mr. H.P. Sharma",
-    position: "Treasurer",
-    photo: hpSharmaImage,
-    mobileNumber: "+91 9927700950"
-  },
   {
     name: "Mr. Hari Prakash Sharma",
     position: "Publicity Secretary",
     photo: hari,
-    mobileNumber: "+91 9927700950"
+    mobileNumber: "+91 8218637306"
   },
   {
     name: "Mr. Dhan Singh",
     position: "Office Secretary",
     photo:  dhanSinghImage,
     mobileNumber: "+91 7500417530"
-  }
+  },
+  {
+    name: "Mr. H.P. Sharma",
+    position: "Treasurer",
+    photo: hpSharmaImage,
+    mobileNumber: "+91 9927700950"
+  },
 ];
 
 function Team() {

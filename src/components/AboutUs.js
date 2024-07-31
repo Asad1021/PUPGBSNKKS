@@ -109,16 +109,16 @@ function AboutUs() {
             <p>A.S. Gupta</p>
           </div>
           <div className={styles.structureItem}>
-            <h4>Treasurer</h4>
-            <p>H.P. Sharma</p>
-          </div>
-          <div className={styles.structureItem}>
             <h4>Publicity Secretary</h4>
             <p>Hari Prakash Sharma</p>
           </div>
           <div className={styles.structureItem}>
             <h4>Office Secretary</h4>
             <p>Dhan Singh</p>
+          </div>
+          <div className={styles.structureItem}>
+            <h4>Treasurer</h4>
+            <p>H.P. Sharma</p>
           </div>
           <div className={styles.structureItem}>
             <h4>Regional Office Bearers</h4>
