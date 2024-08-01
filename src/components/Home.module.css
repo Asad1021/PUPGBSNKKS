@@ -4,7 +4,7 @@
   }
   
   .hero {
-    background-color: #771631;
+    background-color: #791632;
     color: white;
     padding: 4rem 2rem;
     margin-bottom: 2rem;
@@ -50,7 +50,7 @@
     flex-basis: calc(33.333% - 2rem);
     margin: 1rem;
     padding: 1.5rem;
-    background-color: white;
+    background-color: rgb(236, 234, 234);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -66,7 +66,7 @@
   }
   
   .about {
-    background-color: #f9f9f9;
+    background-color: #d3d2d2;
     padding: 3rem 2rem;
     margin-top: 2rem;
   }
@@ -78,26 +78,25 @@
   
   @media (max-width: 768px) {
     .feature {
-      flex-basis: 100%;
+      flex-basis: 75%;
     }
     .hero {
-      background-color: #771631;
       color: white;
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
       margin-bottom: 1rem;
     }
     
     .heroTitle {
-      font-size: 2rem;
+      font-size: 1.6rem;
       margin-bottom: 0.5rem;
     }
     
     .heroSubtitle {
-      font-size: 0.8rem;
+      font-size: 1rem;
       margin-bottom: 1rem;
     }
     .logo{
-      width: 30%;
+      width: 50%;
       height:auto;
     }
   }
