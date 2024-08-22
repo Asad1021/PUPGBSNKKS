@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
@@ -35,6 +36,7 @@ function App() {
       <main className="container">
         {renderPage()}
       </main>
+      <Footer setCurrentPage={setCurrentPage} currentPage={currentPage} />
     </div>
   );
 }
