@@ -7,6 +7,7 @@ import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Team from './components/Team';
 import Gallery from './components/Gallery';
+import Announcements from './components/Announcements';
 import './App.css';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   const renderPage = () => {
     switch(currentPage) {
       case 'home':
-        return <Home />;
+        return <Home setCurrentPage={setCurrentPage} />;
       case 'about':
         return <AboutUs />;
       case 'contact':
@@ -25,7 +26,7 @@ function App() {
       case 'gallery':
         return <Gallery />;
       default:
-        return <Home />;
+        return <Home setCurrentPage={setCurrentPage} />;
     }
   };
 
