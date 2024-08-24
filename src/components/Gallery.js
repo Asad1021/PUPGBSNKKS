@@ -16,10 +16,26 @@ const featuredImages = importAllFeat(require.context('../featured', false, /\.(j
   alt: `Featured Image ${index + 1}`
 }));
 
+// Import event images dynamically
+const eventContext = require.context('../events', true, /\.(jpg|jpeg|png|gif)$/);
+const eventImages = eventContext.keys().reduce((acc, path) => {
+  const eventName = path.split('/')[1];
+  if (!acc[eventName]) {
+    acc[eventName] = [];
+  }
+  acc[eventName].push({
+    id: acc[eventName].length + 1,
+    src: eventContext(path),
+    alt: `${eventName} Image ${acc[eventName].length + 1}`
+  });
+  return acc;
+}, {});
 
+const events = Object.keys(eventImages);
 
 function Gallery() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,20 +48,60 @@ function Gallery() {
   }, []);
 
   return (
-
     <div className={styles.galleryContainer}>
-      <div className= {styles.galleryTitle}>Gallery</div>
-    
+      <h1 className={styles.galleryTitle}>Gallery</h1>
+      
+
       <div className={styles.featuredSection}>
-        {featuredImages.map((image, index) => (
-          <img
-            key={image.id}
-            src={image.src}
-            alt={image.alt}
-            className={`${styles.featuredImage} ${index === currentImageIndex ? styles.active : ''}`}
-          />
+  {featuredImages.map((image, index) => (
+    <img
+      key={image.id}
+      src={image.src}
+      alt={image.alt}
+      className={`${styles.featuredImage} ${index === currentImageIndex ? styles.active : ''}`}
+      style={{zIndex: index === currentImageIndex ? 1 : 0}}
+    />
+  ))}
+</div>
+      <h2 className={styles.sectionTitle}>Our Meetings</h2>
+      <div className={styles.eventSelector}>
+        <button 
+          className={`${styles.eventButton} ${selectedEvent === null ? styles.active : ''}`}
+          onClick={() => setSelectedEvent(null)}
+        >
+          All Meetings
+        </button>
+        {events.map(event => (
+          <button 
+            key={event}
+            className={`${styles.eventButton} ${selectedEvent === event ? styles.active : ''}`}
+            onClick={() => setSelectedEvent(event)}
+          >
+            {event}
+          </button>
         ))}
       </div>
+
+
+
+      <div className={styles.eventGalleryGrid}>
+        {events
+          .filter(event => selectedEvent === null || event === selectedEvent)
+          .map(event => (
+            <div key={event} className={styles.eventSection}>
+              <h3 className={styles.eventTitle}>{event}</h3>
+              <div className={styles.galleryGrid}>
+                {eventImages[event].map((image) => (
+                  <div key={image.id} className={styles.galleryItem}>
+                    <img src={image.src} alt={image.alt} className={styles.galleryImage} />
+                  </div>
+                ))}
+              </div>
+            </div>  
+          ))
+        }
+      </div>
+      <h2 className={styles.sectionTitle}>Past Events</h2>
       <div className={styles.galleryGrid}>
         {galleryImages.map((image) => (
           <div key={image.id} className={styles.galleryItem}>
@@ -53,6 +109,8 @@ function Gallery() {
           </div>
         ))}
       </div>
+
+ 
     </div>
   );
 }
