@@ -20,11 +20,20 @@ const Footer = ({ setCurrentPage, currentPage }) => {
     });
   };
   useEffect(() => {
-    // Increment the counter
-    fetch('https://api.countapi.xyz/hit/pupgbks.in/visits')
-      .then(response => response.json())
-      .then(data => setVisitorCount(data.value))
-      .catch(error => console.error('Error fetching visitor count:', error));
+    const fetchVisitorCount = async () => {
+      try {
+        const response = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://api.countapi.xyz/hit/pupgbks.in/visits'));
+        const data = await response.json();
+        if (data.contents) {
+          const count = JSON.parse(data.contents).value;
+          setVisitorCount(count);
+        }
+      } catch (error) {
+        console.error('Error fetching visitor count:', error);
+      }
+    };
+
+    fetchVisitorCount();
   }, []);
   return (
     <footer className="footer">
