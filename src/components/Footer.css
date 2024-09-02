@@ -64,6 +64,11 @@
   cursor: pointer;
 }
 
+.footer-bottom p:last-child {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fab438;
+}
 @media (max-width: 768px) {
   .footer-content > div {
     flex-basis: 100%;
