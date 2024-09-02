@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Footer.css";
 import logo from "../images/footer.png"
 
@@ -19,13 +19,7 @@ const Footer = ({ setCurrentPage, currentPage }) => {
       behavior: 'smooth'
     });
   };
-  useEffect(() => {
-    // Increment the counter
-    fetch('https://api.countapi.xyz/hit/pupgbks.in/visits')
-      .then(response => response.json())
-      .then(data => setVisitorCount(data.value))
-      .catch(error => console.error('Error fetching visitor count:', error));
-  }, []);
+
   return (
     <footer className="footer">
       <div className="container">
@@ -60,9 +54,7 @@ const Footer = ({ setCurrentPage, currentPage }) => {
               Asad Alam
             </a>
           </p>
-          {visitorCount !== null && (
-            <p>Total Visitors: {visitorCount}</p>
-          )}
+       
         </div>
 
       </div>
