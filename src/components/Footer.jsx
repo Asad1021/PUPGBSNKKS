@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../images/footer.png"
+import { useState } from "react";
 
 const Footer = ({ setCurrentPage, currentPage }) => {
   const [visitorCount, setVisitorCount] = useState(null);
