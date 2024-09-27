@@ -4,7 +4,7 @@ import logo from "../images/footer.png"
 import { useState } from "react";
 
 const Footer = ({ setCurrentPage, currentPage }) => {
-  const [visitorCount, setVisitorCount] = useState(null);
+  // const [visitorCount, setVisitorCount] = useState(null);
   const footerItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About Us' },
