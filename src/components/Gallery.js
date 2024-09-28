@@ -52,9 +52,9 @@ function Gallery() {
     <div className={styles.galleryContainer}>
 
       <h2 className={styles.galleryTitle}>Gallery</h2>
-      <motion.div whileInView={{ x: [100, 0], opacity:[0,1] }}
-                    transition={{ duration: 0.8 }}
-      className={styles.featuredSection}>
+      <motion.div whileInView={{ x: [100, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.8 }}
+        className={styles.featuredSection}>
         {featuredImages.map((image, index) => (
           <img
             key={image.id}
@@ -99,7 +99,7 @@ function Gallery() {
               <h3 className={styles.eventTitle}>{event}</h3>
               <div className={styles.galleryGrid}>
                 {eventImages[event].map((image) => (
-                  <motion.div whileInView={{ y: [-100, 0], opacity:[0,1] }}
+                  <motion.div whileInView={{ y: [-100, 0], opacity: [0, 1] }}
                     transition={{ duration: 0.8 }} key={image.id} className={styles.galleryItem}>
                     <img src={image.src} alt={image.alt} className={styles.galleryImage} />
                   </motion.div>
@@ -112,9 +112,9 @@ function Gallery() {
       <h2 className={styles.sectionTitle}>Past Events</h2>
       <div className={styles.galleryGrid}>
         {galleryImages.map((image) => (
-          <motion.div whileInView={{ y: [-100, 0], opacity:[0,1] }}
-          transition={{ duration: 0.8 }}
-           key={image.id} className={styles.galleryItem}>
+          <motion.div whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.8 }}
+            key={image.id} className={styles.galleryItem}>
             <img src={image.src} alt={image.alt} className={styles.galleryImage} />
           </motion.div>
         ))}
