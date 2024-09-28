@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Gallery.module.css';
+import { motion } from 'framer-motion'
 
 // Import all gallery images dynamically
 const importAll = (r) => r.keys().map(r);
@@ -49,38 +50,44 @@ function Gallery() {
 
   return (
     <div className={styles.galleryContainer}>
-      <h1 className={styles.galleryTitle}>Gallery</h1>
-      
 
-      <div className={styles.featuredSection}>
-  {featuredImages.map((image, index) => (
-    <img
-      key={image.id}
-      src={image.src}
-      alt={image.alt}
-      className={`${styles.featuredImage} ${index === currentImageIndex ? styles.active : ''}`}
-      style={{zIndex: index === currentImageIndex ? 1 : 0}}
-    />
-  ))}
-</div>
-      <h2 className={styles.sectionTitle}>Our Meetings</h2>
-      <div className={styles.eventSelector}>
-        <button 
-          className={`${styles.eventButton} ${selectedEvent === null ? styles.active : ''}`}
-          onClick={() => setSelectedEvent(null)}
-        >
-          All Meetings
-        </button>
-        {events.map(event => (
-          <button 
-            key={event}
-            className={`${styles.eventButton} ${selectedEvent === event ? styles.active : ''}`}
-            onClick={() => setSelectedEvent(event)}
-          >
-            {event}
-          </button>
+      <h2 className={styles.galleryTitle}>Gallery</h2>
+      <motion.div whileInView={{ x: [100, 0], opacity:[0,1] }}
+                    transition={{ duration: 0.8 }}
+      className={styles.featuredSection}>
+        {featuredImages.map((image, index) => (
+          <img
+            key={image.id}
+            src={image.src}
+            alt={image.alt}
+            className={`${styles.featuredImage} ${index === currentImageIndex ? styles.active : ''}`}
+            style={{ zIndex: index === currentImageIndex ? 1 : 0 }}
+          />
         ))}
-      </div>
+      </motion.div>
+      <motion.div
+        whileInView={{ x: [100, 0] }}
+        transition={{ duration: 0.5 }}
+      >
+        <h2 className={styles.sectionTitle}>Our Meetings</h2>
+        <div className={styles.eventSelector}>
+          <button
+            className={`${styles.eventButton} ${selectedEvent === null ? styles.active : ''}`}
+            onClick={() => setSelectedEvent(null)}
+          >
+            All Meetings
+          </button>
+          {events.map(event => (
+            <button
+              key={event}
+              className={`${styles.eventButton} ${selectedEvent === event ? styles.active : ''}`}
+              onClick={() => setSelectedEvent(event)}
+            >
+              {event}
+            </button>
+          ))}
+        </div>
+      </motion.div>
 
 
 
@@ -92,25 +99,28 @@ function Gallery() {
               <h3 className={styles.eventTitle}>{event}</h3>
               <div className={styles.galleryGrid}>
                 {eventImages[event].map((image) => (
-                  <div key={image.id} className={styles.galleryItem}>
+                  <motion.div whileInView={{ y: [-100, 0], opacity:[0,1] }}
+                    transition={{ duration: 0.8 }} key={image.id} className={styles.galleryItem}>
                     <img src={image.src} alt={image.alt} className={styles.galleryImage} />
-                  </div>
+                  </motion.div>
                 ))}
               </div>
-            </div>  
+            </div>
           ))
         }
       </div>
       <h2 className={styles.sectionTitle}>Past Events</h2>
       <div className={styles.galleryGrid}>
         {galleryImages.map((image) => (
-          <div key={image.id} className={styles.galleryItem}>
+          <motion.div whileInView={{ y: [-100, 0], opacity:[0,1] }}
+          transition={{ duration: 0.8 }}
+           key={image.id} className={styles.galleryItem}>
             <img src={image.src} alt={image.alt} className={styles.galleryImage} />
-          </div>
+          </motion.div>
         ))}
       </div>
 
- 
+
     </div>
   );
 }

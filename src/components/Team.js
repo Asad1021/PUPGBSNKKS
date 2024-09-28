@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Team.module.css';
+import {motion} from 'framer-motion';
 
 // Import team member images
 import irfanAlamImage from '../images/Irfan Alam.png';
@@ -91,22 +92,28 @@ const teamMembers = [
 function Team() {
   return (
     <div className={styles.team}>
-      <h2 className={styles.teamTitle}>Our Team</h2>
+      <h1 className={styles.teamTitle}>Our Team</h1>
       <div className={styles.teamGrid}>
         {teamMembers.map((member, index) => (
-          <div key={index} className={styles.teamMember}>
+          <motion.div 
+          whileInView={{y:[100,0],opacity:[0,1]}}
+          transition={{duration:1}}
+          key={index} className={styles.teamMember}>
             <img src={member.photo} alt={member.name} className={styles.memberPhoto} />
             <div className={styles.memberInfo}>
               <h3 className={styles.memberName}>{member.name}</h3>
               <p className={styles.memberPosition}>{member.position}</p>
               <p className={styles.membermobileNumber}>{member.mobileNumber}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
-        <div className={styles.structureItem}>
+        <motion.div 
+        whileInView={{x:[100,0], opacity:[0,1]}}
+        transition={{duration:1}}
+        className={styles.structureItem}>
          <h4>Regional Office Bearers</h4>
          <p>20+</p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
