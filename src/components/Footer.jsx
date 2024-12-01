@@ -51,7 +51,7 @@ const Footer = ({ setCurrentPage, currentPage }) => {
         <div className="footer-bottom">
           <p>Copyright © 2024 PUPGBSNKKS</p>
           <p>Developed & Maintained By&nbsp;
-            <a href="https://asad1021.github.io/" className="design-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://asad1021.netlify.app/" className="design-link" target="_blank" rel="noopener noreferrer">
               Asad Alam
             </a>
           </p>
