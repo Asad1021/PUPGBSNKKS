@@ -6,13 +6,13 @@ function Announcements({ setCurrentPage }) {
     {
       id: 4,
       text: "A large meeting of PUPGB was held in Moradabad on 21st September 2024, addressed by Com. Mahender Singh, Ganapathi Hegde, and Sagun Sukla.",
-      isNew: true,
+      isNew: false,
       page: 'gallery'
     },
     {
       id: 3,
       text: "Important meeting held on August 21, 2024, Bijnor. Click for photos.",
-      isNew: true,
+      isNew: false,
       page: 'gallery'
     },
     { id: 2, text: "New team members have joined. Visit the Team page to learn more.", isNew: false, page: 'team' },
