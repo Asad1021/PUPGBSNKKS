@@ -1,11 +1,10 @@
 .navbar {
   background-color: #91203e;
   padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100vw;
   box-sizing: border-box;
   overflow-x: auto;
-
 }
 
 .navList {
@@ -61,4 +60,167 @@
     padding: 0.5rem 0.5rem;
     font-size: 0.9rem;
   }
+}
+/* Existing navbar styles remain the same */
+
+/* Login Bar Styles */
+.loginBar {
+  background-color: #a30b33;
+  border-bottom: 1px solid #dee2e6;
+  padding: 8px 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.loginContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.loginButton {
+  background-color: #7f0f2e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.loginButton:hover {
+  background-color: #fab438;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background-color: #7f0f2e;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #b0acac;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton:hover {
+  color: #000;
+}
+
+.form {
+  padding: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #fab438;
+  box-shadow: 0 0 0 1px #fab438;
+}
+
+.submitButton {
+  /* width: 10%; */
+  background-color: #a30b33;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background-color: #8e092c;
+  color: #aca9a9;
+  border-radius: 4px;
+}
+
+.modalFooter {
+  padding: 10px 20px 20px 20px;
+  text-align: center;
+}
+
+.registerButton {
+  background-color: #a30b33;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.registerButton:hover {
+  background-color: #8e092c;
+  color: #aca9a9;
+}
+
+/* Adjust navbar position to account for login bar */
+.navbar {
+  margin-top: 50px; /* Adjust based on login bar height */
 }
