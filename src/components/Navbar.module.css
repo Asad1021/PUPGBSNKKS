@@ -61,13 +61,13 @@
     font-size: 0.9rem;
   }
 }
-/* Existing navbar styles remain the same */
 
 /* Login Bar Styles */
 .loginBar {
   background-color: #a30b33;
   border-bottom: 1px solid #dee2e6;
   padding: 8px 0;
+  margin-bottom: -52px;
   width: 100%;
   z-index: 1000;
 }
