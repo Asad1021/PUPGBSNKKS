@@ -11,20 +11,25 @@ function Navbar({ setCurrentPage, currentPage }) {
   ];
 
   return (
-    <nav className={styles.navbar}>
-      <ul className={styles.navList}>
-        {navItems.map((item) => (
-          <li key={item.id} className={styles.navItem}>
-            <button
-              onClick={() => setCurrentPage(item.id)}
-              className={`${styles.navLink} ${currentPage === item.id ? styles.active : ''}`}
-            >
-              {item.label}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div>
+      <nav className={styles.navbar}>
+        <ul className={styles.navList}>
+          {navItems.map((item) => (
+            <li key={item.id} className={styles.navItem}>
+              <button
+                onClick={() => setCurrentPage(item.id)}
+                className={`${styles.navLink} ${currentPage === item.id ? styles.active : ''}`}
+              >
+                {item.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <div>
+
+      </div>
+    </div>
   );
 }
 
